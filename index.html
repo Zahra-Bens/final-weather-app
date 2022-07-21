@@ -18,51 +18,75 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="overview">
-          <h1 id="city"></h1>
-          <ul>
-            <li>last updated: <span id="date"></span></li>
-            <li id="description">Clear</li>
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Clear icone"
-                class="float-left"
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city"
+                id="city-input"
+                class="form-control"
+                autocomplete="off"
               />
+            </div>
 
-              <span class="float-left">
-                <strong id="temperature">12</strong
-                ><span class="units"
-                  >°C | <a href="#" alt="F degre">°F</a></span
-                >
-              </span>
+            <div class="col-3">
+              <input
+                type="submit"
+                class="btn btn-primary w-100"
+                value="Search"
+              />
+            </div>
+              </form>
+      </div>
+
+            <div class="overview">
+              <h1 id="city"></h1>
+              <ul>
+                <li>last updated: <span id="date"></span></li>
+                <li id="description">Clear</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="Clear icone"
+                    id="icon"
+                    class="float-left"
+                  />
+
+                  <span class="float-left">
+                    <strong id="temperature">12</strong
+                    ><span class="units"
+                      >°C | <a href="#" alt="F degre">°F</a></span
+                    >
+                  </span>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li id="perticipation">Perticipations: 0%</li>
+
+                  <li id="humidity">Humidity: 73%</li>
+                  <li id="wind">Wind: 2km/h</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li id="perticipation">Perticipations: 0%</li>
-
-              <li id="humidity">Humidity: 73%</li>
-              <li id="wind">Wind: 2km/h</li>
-            </ul>
+          <div class="weather-app">
+            <small>
+              <a
+                href="https://github.com/Zahra-Bens/final-weather-app/blob/main/index.html"
+                target="_blank"
+                >Open-source code,</a
+              >
+              by Zahra Bensaidane</small
+            >
           </div>
-        </div>
-      </div>
-      <div class="weather-app">
-        <small>
-          <a
-            href="https://github.com/Zahra-Bens/final-weather-app/blob/main/index.html"
-            target="_blank"
-            >Open-source code,</a
-          >
-          by Zahra Bensaidane</small
-        >
-      </div>
-      <script src="src/app.js"></script>
+          <script src="src/app.js"></script>
+      
     </div>
   </body>
 </html>
