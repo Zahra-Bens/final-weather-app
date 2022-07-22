@@ -11,7 +11,8 @@ h1 {
   border-color: none;
   background-color: #ec6e4c;
   box-shadow: 4px;
-  max-width: 100px;
+
+  max-width: 80px;
 }
 .btn:hover {
   color: #f7f3f0;
@@ -19,7 +20,7 @@ h1 {
   background-color: #ec6e4c;
 }
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 550px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid rgb(230, 230, 230);
